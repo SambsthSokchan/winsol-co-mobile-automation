@@ -84,7 +84,7 @@ Show me every command and terminal output as you execute. Do not skip step 6.
 
 ```
 That is the only thing I need to see. Once we confirm the break test **fails** (as it should), your harness is officially real and we can celebrate.
-## 📁 The Complete Architecture
+## 📁 Complete Project Structure
 ```cmd
 winsol-co-mobile-automation/
 │
