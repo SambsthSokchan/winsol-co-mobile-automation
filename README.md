@@ -82,11 +82,6 @@ Run npm install.
 
 Show me every command and terminal output as you execute. Do not skip step 6.
 
-### Step 4: Watch and wait
-
-Claude CLI will start writing the code. It will take about 2–3 minutes. Then it will install the dependencies. Then it will start the break test.
-
-**When it runs the break test, paste the output here.** 
 ```
 That is the only thing I need to see. Once we confirm the break test **fails** (as it should), your harness is officially real and we can celebrate.
 ## 📁 The Complete Architecture
