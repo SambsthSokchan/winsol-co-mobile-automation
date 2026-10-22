@@ -85,3 +85,51 @@ Show me every command and terminal output as you execute. Do not skip step 6.
 ```
 That is the only thing I need to see. Once we confirm the break test **fails** (as it should), your harness is officially real and we can celebrate.
 ## 📁 The Complete Architecture
+```cmd
+winsol-co-mobile-automation/
+│
+├── apps/
+│   └── winsol_co_app.apk                    ← [You put this here] Android App Binary
+│
+├── test-data/
+│   └── WinSol_7_Automation_Sheets.xlsx      ← [You put this here] Your 1,159 test cases
+│
+├── pages/
+│   └── mobile/
+│       ├── coLoginPage.ts                   ← [Claude writes] Login & OTP
+│       ├── prospectPage.ts                  ← [Claude writes] Prospect forms
+│       ├── preAssessmentPage.ts             ← [Claude writes] Scorecard
+│       ├── appraisalWizard.ts               ← [Claude writes] Master Facade for 8 tabs
+│       ├── titleTransferPage.ts             ← [Claude writes] Hypothec & Title
+│       ├── scheduleTaskPage.ts              ← [Claude writes] Field tasks
+│       ├── refinancePage.ts                 ← [Claude writes] Refinance
+│       ├── offlineSyncPage.ts               ← [Claude writes] Offline Sync
+│       │
+│       └── tabs/                            ← [Claude creates this folder]
+│           ├── clientInfoTab.ts             ← [Claude writes] Tab 1: Demographics & GPS
+│           ├── loanDetailsTab.ts            ← [Claude writes] Tab 2: Loan Terms
+│           ├── cashFlowTab.ts               ← [Claude writes] Tab 3: DSCR & Income
+│           ├── guarantorTab.ts              ← [Claude writes] Tab 4: Guarantors
+│           ├── collateralTab.ts             ← [Claude writes] Tab 5: Valuation
+│           ├── referenceTab.ts              ← [Claude writes] Tab 6: References
+│           ├── documentsTab.ts              ← [Claude writes] Tab 7: Uploads
+│           └── summaryGateTab.ts            ← [Claude writes] Tab 8: BR-01 Gate
+│
+├── tests/
+│   └── mobile/
+│       └── co-ui.spec.ts                    ← [Claude writes] The main Excel loop & Break Test
+│
+├── utils/
+│   ├── driverFactory.ts                     ← [Claude writes] Appium Session Setup
+│   ├── excelReader.ts                       ← [Claude writes] Reads Excel + Finds exact Row
+│   └── excelWriter.ts                       ← [Claude writes] Writes PASS/FAIL to Excel
+│
+├── screenshots/                             ← [Empty folder] Claude saves failed screenshots here
+├── reports/                                 ← [Empty folder] Optional HTML reports
+│
+├── capabilities.json                        ← [Claude writes] Appium Device Settings
+├── CLAUDE.md                                ← [Claude writes] Agent Rules
+├── package.json                             ← [Claude writes] NPM Dependencies
+├── tsconfig.json                            ← [Claude writes] TypeScript Config
+└── wdio.conf.ts                             ← [Claude writes] WebdriverIO Runner Setup
+```
