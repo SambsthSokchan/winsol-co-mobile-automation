@@ -10,8 +10,8 @@ Here is exactly what you do next:
 ### Step 1: Put your APK and Excel in the folders
 *(Make sure they are actually in the local folders, not just on your desktop)*
 ```cmd
-copy %USERPROFILE%\Desktop\winsol_co_app.apk apps\
-copy %USERPROFILE%\Desktop\WinSol_7_Automation_Sheets.xlsx test-data\
+apps\winsol_co_app.apk apps\
+test-data\WinSol_7_Automation_Sheets.xlsx test-data\
 ```
 *(If they are in Downloads, change `Desktop` to `Downloads`)*
 
