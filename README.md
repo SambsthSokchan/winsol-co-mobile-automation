@@ -135,7 +135,7 @@ winsol-co-mobile-automation/
 ```
 **Appium + Claude Code CLI Data-Driven Mobile Automation Architecture**
 
-Here is the complete end-to-end setup to run **UI Automation on the WinSol Credit Officer (CO) Mobile App** using **Appium 2.x + Claude Code CLI (via Appium MCP)** [cite: 1, 14, 15], where test cases are read from your master UAT Excel workbook (`WinSol_7_Automation_Sheets.xlsx`), executed on the mobile app, and updated directly back into the spreadsheet [cite: 6, 10, 159].
+This project runs UI Automation on the WinSol Credit Officer (CO) Mobile App using Appium 2.x + Claude Code CLI (via Appium MCP). Test cases are read from the master UAT Excel workbook (WinSol_7_Automation_Sheets.xlsx), executed on the mobile app, and updated directly back into the spreadsheet.
 
 ```
  ┌─────────────────────────────────────────────────────────────────────────────┐
