@@ -140,7 +140,7 @@ Here is the complete end-to-end setup to run **UI Automation on the WinSol Credi
 ```
  ┌─────────────────────────────────────────────────────────────────────────────┐
  │                    EXCEL UAT WORKBOOK (Source of Truth)                     │
- │          WinSol_7_Automation_Sheets.xlsx  ──► Sheet: "1. CO (Mobile App)"     │
+ │          WinSol_7_Automation_Sheets.xlsx  ──► Sheet: "1. CO (Mobile App)"   │
  └──────────────────────────────────────┬──────────────────────────────────────┘
                                         │
                                  utils/excelReader.ts
@@ -148,7 +148,7 @@ Here is the complete end-to-end setup to run **UI Automation on the WinSol Credi
                                         ▼
  ┌─────────────────────────────────────────────────────────────────────────────┐
  │                     CLAUDE CODE CLI (AI Orchestrator)                       │
- │    Reads CLAUDE.md ──► Drives Appium MCP ──► Executes Appium Test Specs    │
+ │    Reads CLAUDE.md ──► Drives Appium MCP ──► Executes Appium Test Specs     │
  └──────────────────────────────────────┬──────────────────────────────────────┘
                                         │
                             appium-mcp (JSON-RPC)
@@ -164,7 +164,7 @@ Here is the complete end-to-end setup to run **UI Automation on the WinSol Credi
                                         ▼
  ┌─────────────────────────────────────────────────────────────────────────────┐
  │                 WIN SOL CREDIT OFFICER (CO) MOBILE APP (.apk)               │
- │            Performs UI steps ──► Asserts Expected Result text                │
+ │            Performs UI steps ──► Asserts Expected Result text               │
  └──────────────────────────────────────┬──────────────────────────────────────┘
                                         │
                                  utils/excelWriter.ts
